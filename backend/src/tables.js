@@ -3,11 +3,22 @@
 /* ************************************************************************* */
 
 // Import the manager modules responsible for handling data operations on the tables
-const ItemManager = require("./models/ItemManager");
+const ArchetypeManager = require("./models/ArchetypeManager");
+const PersonaManager = require("./models/PersonaManager");
+const PersonaRoleManager = require("./models/PersonaRoleManager");
+const PersonaSkillManager = require("./models/PersonaSkillManager");
+const RoleManager = require("./models/RoleManager");
+const SkillManager = require("./models/SkillManager");
+const UserManager = require("./models/UserManager");
 
 const managers = [
-  ItemManager,
-  // Add other managers here
+  ArchetypeManager,
+  PersonaManager,
+  PersonaRoleManager,
+  PersonaSkillManager,
+  RoleManager,
+  SkillManager,
+  UserManager,
 ];
 
 // Create an empty object to hold data managers for different tables
